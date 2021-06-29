@@ -1,0 +1,6 @@
+{
+  "name": "libtirpc",
+  "version": "1.2.6",
+  "description": "Libtirpc is a port of Suns Transport-Independent RPC library to Linux.",
+  "homepage": "https://sourceforge.net/projects/libtirpc/"
+}

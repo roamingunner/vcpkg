@@ -19,13 +19,13 @@ vcpkg_execute_build_process(
 )
 
 vcpkg_execute_build_process(
-    COMMAND make RAISE_SETFCAP=no LIBATTR=no PAM_CAP=no CROSS_COMPILE=${CMAKE_COMPILER_PREFIX}  -C libcap/ libcap.so
+    COMMAND make RAISE_SETFCAP=no LIBATTR=no PAM_CAP=no CROSS_COMPILE=${VCPKG_PLATFORM_TOOLSET}-  -C libcap/ libcap.so
     WORKING_DIRECTORY ${SOURCE_PATH}
     LOGNAME ${PORT}-build
 )
 
 vcpkg_execute_build_process(
-    COMMAND make RAISE_SETFCAP=no LIBATTR=no PAM_CAP=no CROSS_COMPILE=${CMAKE_COMPILER_PREFIX} DESTDIR=${CURRENT_PACKAGES_DIR} lib=lib prefix=/  -C libcap/ install-shared-cap
+    COMMAND make RAISE_SETFCAP=no LIBATTR=no PAM_CAP=no CROSS_COMPILE=${VCPKG_PLATFORM_TOOLSET}- DESTDIR=${CURRENT_PACKAGES_DIR} lib=lib prefix=/  -C libcap/ install-shared-cap
     WORKING_DIRECTORY ${SOURCE_PATH}
     LOGNAME ${PORT}-build
 )
