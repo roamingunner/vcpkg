@@ -1,0 +1,6 @@
+{
+  "name": "libfuse",
+  "version": "3.9.3",
+  "description": "The reference implementation of the Linux FUSE (Filesystem in Userspace) interface",
+  "homepage": "https://github.com/libfuse/libfuse"
+}
