@@ -1,5 +1,7 @@
 if (NOT VCPKG_TARGET_IS_WINDOWS)
+if (VCPKG_LIBRARY_LINKAGE STREQUAL static)
     vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
+endif()
 endif()
 
 vcpkg_from_github(
