@@ -16,10 +16,10 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
-file(RENAME "${CURRENT_PACKAGES_DIR}/share/Catch2" "${CURRENT_PACKAGES_DIR}/share/catch2")
-file(RENAME "${CURRENT_PACKAGES_DIR}/debug/share/Catch2" "${CURRENT_PACKAGES_DIR}/debug/share/catch2")
+# file(RENAME "${CURRENT_PACKAGES_DIR}/share/Catch2" "${CURRENT_PACKAGES_DIR}/share/catch2")
+# file(RENAME "${CURRENT_PACKAGES_DIR}/debug/share/Catch2" "${CURRENT_PACKAGES_DIR}/debug/share/catch2")
 
-vcpkg_fixup_cmake_targets(CONFIG_PATH lib/cmake/Catch2)
+vcpkg_fixup_cmake_targets(CONFIG_PATH lib/cmake/catch2)
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
 
